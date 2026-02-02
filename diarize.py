@@ -8,7 +8,7 @@ import os
 
 # --- CONFIGURATION ---
 LOCATION = "us-central1"
-PROJECT_ID = 'jackngare-amboseli-demos'
+PROJECT_ID = '' #GCP Project
 
 class GeminiSpeechProcessor:
     def __init__(self, project_id, location, model_name="gemini-2.5-flash"):
@@ -275,7 +275,7 @@ class GeminiSpeechProcessor:
 
 # --- USAGE ---
 # Make sure to replace this path with your actual local or drive path
-audio_path = "./audio/TIC-a02ee4b6.wav"  # Test with the original silent file again
+audio_path = ""  # Test with the original silent file again
 
 # Initializing with Gemini 2.5 Flash
 processor = GeminiSpeechProcessor(project_id=PROJECT_ID, location=LOCATION)
