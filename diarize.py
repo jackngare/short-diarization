@@ -1,3 +1,16 @@
+#Copyright 2026 Google LLC
+#Licensed under the Apache License, Version 2.0 (the "License");
+#you may not use this file except in compliance with the License.
+#You may obtain a copy of the License at
+#https://www.apache.org/licenses/LICENSE-2.0
+#Unless required by applicable law or agreed to in writing, software
+#distributed under the License is distributed on an "AS IS" BASIS,
+#WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#See the License for the specific language governing permissions and
+#limitations under the License.
+
+
+
 from google import genai
 from google.genai import types
 import json
@@ -274,8 +287,7 @@ class GeminiSpeechProcessor:
             print(json_text)
 
 # --- USAGE ---
-# Make sure to replace this path with your actual local or drive path
-audio_path = ""  # Test with the original silent file again
+audio_path = ""  # audio file path
 
 # Initializing with Gemini 2.5 Flash
 processor = GeminiSpeechProcessor(project_id=PROJECT_ID, location=LOCATION)
